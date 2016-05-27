@@ -1,0 +1,18 @@
+'use strict';
+
+function fibonacci_series(n) {
+
+return calculateFiboncci(n);
+}
+
+function calculateFiboncci(n){
+    var finboncciArray = [0,1];
+
+    for(var i = 2;i <= n;i++){
+        finboncciArray.push(finboncciArray[i-2]+finboncciArray[i-1]);
+    }
+
+    return finboncciArray;
+}
+
+module.exports = fibonacci_series;
